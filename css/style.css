@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  background-color: #f9f9f9;
+}
+header {
+  background-color: #fff;
+  padding: 0 1em;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  margin-left: 20px;
+}
+.search {
+  display: flex;
+}
+.search input {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 1px 0px rgba(0, 0, 0, 0.1);
+  height: 33px;
+  padding: 0 10px;
+  font: normal 1em "Roboto";
+}
+.search input:focus {
+  border: 1px solid rgba(2, 46, 192, 0.815);
+  box-shadow: inset 0 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.search button {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 2em;
+  opacity: 0.8;
+}
+.search button:hover {
+  box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.1);
+  padding: 0 2em;
+  opacity: 1;
+  cursor: pointer;
+}
+.material-icons.md-20 {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+}
+main {
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+iframe {
+  margin: 0 auto;
+  display: none;
+}
+.visible {
+  display: block;
+}
+.video-section article {
+  display: flex;
+  margin: 20px auto;
+  cursor: pointer;
+}
+.video-section article div {
+  color: rgba(0, 0, 0, 0.7);
+  margin-left: 20px;
+}
+.video-section article div h2 {
+  color: #000;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 0;
+}
+.video-section article div > *:not(h2) {
+  font-size: 0.8em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 75ch;
+}
+.video-section article div p:first-of-type {
+  cursor: pointer;
+}
+.video-section article div p:first-of-type:hover {
+  color: #000;
+}
