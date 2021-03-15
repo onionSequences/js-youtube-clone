@@ -65,12 +65,7 @@ function createVideo(video) {
 
 function createEl(video, type, method, property) {
   var element = document.createElement(type);
-  if (type === "img") {
-    element.setAttribute("src", property);
-    return element;
-  } else {
-    element[method] = video.snippet[property];
-
+  type === "img" ? element.setAttribute("src", property) : element[method] = video.snippet[property]
     return element;
   }
 }
